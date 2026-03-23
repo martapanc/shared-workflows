@@ -57,4 +57,8 @@ echo "npx --no -- commitlint --edit \$1" > .husky/commit-msg
 
 ```js
 export default { extends: ['@commitlint/config-conventional'] };
+
+// or, if the project uses CommonJS instead of ESM:
+
+module.exports = { extends: ['@commitlint/config-conventional'] };
 ```
